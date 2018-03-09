@@ -4,6 +4,10 @@
 	Sign-up for our newsletter, at http://codifydesign.com, to be notified
 	about each new episode of CSS Shorts
 */
+/* 
+html {
+	height: 100%;
+} */
 
 body {
 	padding-top: 30px;
@@ -15,10 +19,35 @@ body {
 	width: 90%; 
 	margin: 0 auto; padding-top: 50%;
 	border: 1px solid #ccc;
+	/*********** GRADIENTS ***********/
+	/* background: linear-gradient(to bottom right, #68c87a, #0d8bcd); */
+	/* the second color will start at 10% */
+	/* background: linear-gradient(to bottom right, #68c87a, #0d8bcd 10%); */
+	/* background: repeating-linear-gradient(to bottom right, #68c87a, #0d8bcd 10%); */
+	/* background: radial-gradient(#68c87a, #0d8bcd 70%); */
+	/* 
+	gradiant tools: 
+		colorzilla.com/gradient-editor
+		cssmatic.com/gradient-editor
+	*/
+	/*********** IMAGES ***********/
+	background-repeat: no-repeat;
+	background-image: url('media/louvre.jpg');
+	/* both of these go by X-value then Y-value */
+	/* background-position: 50% 50%; */
+	background-position: 50% bottom;
+	background-size: 350px 172px;
+	/*
+		contain: expands until either the height or width matches the size of the containing element
+		cover: scales the image so that it fills the whole element - may crop the image
+	*/
+	background-size: cover;
 }
 
 #container p {
 	margin: 0; padding: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 
