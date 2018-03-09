@@ -88,9 +88,10 @@ input {
 	it selects all siblings that follow the first selector
 	but not necessarily immediately
 	and are children of the same parent selector
-*/
-/* 
+
 	the [] indicate that you are specifying an attribute
+
+	this edits the buttons to show as active when selected
 */
 input#all:checked ~ label[for="all"],
 input#design:checked ~ label[for="design"],
