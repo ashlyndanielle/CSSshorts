@@ -26,14 +26,15 @@ img {
   margin: 0 auto;
 }
 
-.flex-container > section {
+.flex-container > section:first-child {
+  width: 300px;
+}
+.flex-container > section:last-child {
   width: 400px;
-  padding: 0 10px;
 }
 
 .form-container {
   display: flex;
-  border: 1px solid #9e0000;
   align-items: center;
   justify-content: center;
 }
