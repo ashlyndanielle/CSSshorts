@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.flex-container > section {
+  width: 400px;
+  padding: 0 10px;
+}
+
+.form-container {
+  display: flex;
+  border: 1px solid #9e0000;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #9e0000;
+  font-size: 14px;
+  color: #333;
+  padding: 20px 0;
+  transition: all .3s linear;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid 9e0000;
+}
+
+label {
+  font-size: 12.5px;
+  color: #000;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.floating-label {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.floating-label label {
+  position: absolute;
+  top: calc(50% + 6.25px);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.floating-label input:not(:placeholder-shown) {
+  padding: 28px 0 12px;
+}
+
+.floating-label input:not(:placeholder-shown) + label {
+  transform: translateY(-30px);
+  opacity: 0.7;
+}

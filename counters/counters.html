@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Counters</title>
+  <style>
+    body {
+      counter-reset: numbered;
+    }
+    ul li {
+      counter-increment: numbered;
+      list-style-type: none;
+    }
+    ul li:not(:first-child) {
+      margin-top: 20px;
+    }
+    ul li::before {
+      content: "0" counter(numbered);
+      color: blueviolet;
+      font-size: 2em;
+      margin-right: 10px;
+      border: 1px solid blueviolet;
+      border-radius: 50%;
+      padding: 1px 10px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="numbered1">Stuff</li>
+    <li class="numbered2">Ideas</li>
+    <li class="numbered3">Things</li>
+    <li class="numbered4">Places</li>
+    <li class="numbered5">People</li>
+    <li class="numbered6">Events</li>
+    <li class="numbered7">Dogs</li>
+    <li class="numbered8">Aligators</li>
+  </ul>
+</body>
+</html>
