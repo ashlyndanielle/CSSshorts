@@ -8,6 +8,8 @@
 body {
   margin: 0;
   padding: 24px;
+  /* background-image: radial-gradient(ellipse farthest-corner at left top, #3108FF 0%, #FFF 100%); */
+  height: 100vh;
 }
 
 .image-container {
@@ -80,4 +82,35 @@ label {
 .floating-label input:not(:placeholder-shown) + label {
   transform: translateY(-30px);
   opacity: 0.7;
+}
+
+.shape-creator {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rectangle {
+  height: 150px;
+  position: relative;
+}
+
+.center {
+  width: 150px;
+}
+
+.left {
+  border-radius: 0% 100% 100% 0% / 0% 50% 50% 0%;
+  width: 30px;
+  left: 30px;
+  box-shadow: #000 40px 0px 0px 40px;
+}
+
+.right {
+  border-radius: 100% 0% 0% 100% / 50% 0% 0% 50%;
+  width: 30px;
+  right: 30px;
+  box-shadow: #000 -40px 0px 0px 40px;
 }
